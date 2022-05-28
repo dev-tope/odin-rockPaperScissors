@@ -9,26 +9,47 @@
     <style>
         body{
             margin: 50px 10px 0px 30px;
+            text-align: center;
         }
-        kbd {
-            border: 1px solid black;
-            color: white;
-            background-color: grey;
-            font-size: 20px;
-        }
-        
         span {
             color: blue;
         }
-
-
+        .selected {
+            background-color: green;
+        }
+        .start-btn{
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 5px 8px 5px 8px;
+            width: 200px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            background-color:#0F91F3 ;
+        }
     </style>
 </head>
 <body>
     
 <h1>Let's Play <span>Rock-Paper-Scissors</span></h1>
 
-<p>open the console with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> and then enter <code>game()</code></p>
+<div class="container">
+    <h2>Your Play</h2>
+
+    <button class="rock">Rock</button> <button class="paper">Paper</button> <button class="scissors">Scissors</button>
+    
+    <div>
+        <h2>Computer's Play</h2>
+        <p>Computer played: <span class="compPlay"></span></p>
+        <h3><span class="result"></span></h3>
+        <div class="score">
+            <div>Your Score: <span class="yourScore"></span></div>
+            <div>Computer Score: <span class="computerScore"></span></div>
+        </div>
+    
+        <!-- <button class="start-btn">START GAME</button> -->
+    </div>
+</div>
 
 
 <script src="index.js"></script>
